@@ -25,10 +25,17 @@ img {
  <img alt="incertidumbre" ng-src="{{imagenActiva}}">
 
  <div id="contenedorCaja" ng-hide="ocultar_menu">
+
 <img src="http://www.sucaijiayuan.com/uploads/allimg/130113/2-130113035448.png" alt="caja">
 
 </div>
+
  <div class="preguntas" ng-style="estilosAngular" ng-class="clasesAngular">
+   <div ng-switch="opcion">
+ <h2 ng-switch-when="a">CALL OF DUTY advance warfare</h2>
+ <h2 ng-switch-when="b">CALL OF DUTY black ops II</h2\>
+</div>
+
  <button ng-click="opcionA()">Opción A</button>
  <button ng-click="opcionB()">Opción B</button>
  <hr>

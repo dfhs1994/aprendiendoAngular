@@ -30,12 +30,12 @@
 
     $scope.opcionA = function () {
       $scope.imagenActiva = 'https://www.callofduty.com/content/dam/atvi/callofduty/hub/main-hub/iw-hub/common/nav/aw-art.jpg'
-
+      $scope.opcion ='a'
     }
 
     $scope.opcionB = function () {
       $scope.imagenActiva ='https://store.playstation.com/store/api/chihiro/00_09_000/container/ID/en/999/UP0002-CUSA03005_00-ASIACODBO3GAME01/1502366730000/image?_version=00_09_000&platform=chihiro&w=225&h=225&bg_color=000000&opacity=100'
-
+      $scope.opcion = 'b'
     }
 
     $scope.cambiarEstilo = function () {
