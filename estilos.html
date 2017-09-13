@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="estilos">
 
 <head>
 <meta charset="utf-8">
@@ -19,13 +19,13 @@ img {
  }
  </style>
  </head>
- <body ng-app="estilosApp">
-<div ng-controller="controladorEstilos">
+ <body ng-controller="controladorEstilos">
 
- <img src="http://jorgesanchezmartinez.com/wp-content/uploads/2017/02/aceptar_incertidumbre_jorge_sanchez_martinez.png" alt="incertidumbre">
 
- <div id="contenedorCaja" ng-hide="ocultarmenu">
-<img src="https://image.flaticon.com/icons/png/512/15/15389.png" alt="caja">
+ <img alt="incertidumbre" ng-src="{{imagenActiva}}">
+
+ <div id="contenedorCaja" ng-hide="ocultar_menu">
+<img src="http://www.sucaijiayuan.com/uploads/allimg/130113/2-130113035448.png" alt="caja">
 
 </div>
  <div class="preguntas" ng-style="estilosAngular" ng-class="clasesAngular">
@@ -41,11 +41,9 @@ img {
 <button ng-click="mostrarCaja()">Mostrar Caja</button>
 </div>
 
-</div>
  <script src="angular/angular.min.js"></script>
- <script src="controlador.js" charset="utf-8"></script>
-<!-- <script src=//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js" charset="utf-8"></script>
--->
+ <script src="controlador.js"></script>
+
  </body>
 
 </html>
