@@ -1,21 +1,21 @@
-// (function(){
-//   angular
-//   .module('directivas', [])
-//
-//   .directive('usuario', function() {
-//     var valoresInternos = {};
-//
-//     valoresInternos.scope={
-//       nombreUsuario : '@nombre',
-//       apellidoUsuario : '@apellido'
-//     }
-//       valoresInternos.template = "¡Bienvenido {{nombreUsuario}} {{apellidoUsuario}}!";
-//
-//     return valoresInternos;
-//   });
-//
-//
-// })();
+(function(){
+  angular
+  .module('directivas', [])
+
+  .directive('usuario', function() {
+    var valoresInternos = {};
+
+    valoresInternos.scope={
+      nombreUsuario : '@nombre',
+      apellidoUsuario : '@apellido'
+    }
+      valoresInternos.template = "¡Bienvenido {{nombreUsuario}} {{apellidoUsuario}}!";
+
+    return valoresInternos;
+  });
+
+
+})();
 
 (function () {
 
