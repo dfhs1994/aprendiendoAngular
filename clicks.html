@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>cliiiiicks</title>
+ <meta name="viewport" content="width=device-width">
+
+ </head>
+ <body ng-app="eventosApp">
+
+ <div ng-controller="eventoscontroller" id="principal">
+   <button  ng-click ="saludo()">clicks</button>
+   <br>
+   <p ng-click="saludo()"> También funciona en párrafos </p>
+   <br>
+   <button ng-dblclick="saludo()"> Doble Click </button>
+   <br>
+   <strong>  Cantidad de clicks: {{conteoClicks}}</strong>
+</div>
+<script src="angular/angular.min.js"></script>
+<script src="controlador.js" ></script>
+
+</body>
+</html>

@@ -63,3 +63,19 @@
 
 
 })();
+
+
+
+(function () {
+
+angular
+.module('eventosApp', [])
+
+.controller('eventoscontroller',["$scope", function($scope) {
+  $scope.a ="diego"
+$scope.conteoClicks = 0;
+$scope.saludo = function(){
+$scope.conteoClicks++
+}
+}])
+})();

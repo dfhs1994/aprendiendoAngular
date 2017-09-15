@@ -19,7 +19,7 @@
 <p><button ng-click="remove()">Remove marked</button></p>
 
 <script>
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', []); <!--ojo con los putos y comas, cuando sean funciones, ahy es donde fallas. -->
 app.controller('todoCtrl', function($scope) {
     $scope.todoList = [{todoText:'Clean House', done:false}];
 
