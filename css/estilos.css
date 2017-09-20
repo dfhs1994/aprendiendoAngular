@@ -13,6 +13,14 @@ form {
     font-size: 20px;
     text-align:center;
 }
+input[type="checkbox"] {
+  width: 40px;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: #ddd;
+}
 .a  {
   background-color: lightgrey;
   width: 300px;
@@ -23,6 +31,7 @@ form {
     font-family: verdana;
     font-size: 20px;
     text-align:center;
+    
 }
 p {
     font-family: verdana;

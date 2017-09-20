@@ -96,6 +96,7 @@ $scope.conteoClicks++
           angular.forEach(oldList, function(x) {
               if (!x.done) $scope.todolista.push(x);
           });
+          
       };
   });
 }());
