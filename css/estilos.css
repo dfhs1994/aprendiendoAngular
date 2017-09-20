@@ -1,11 +1,11 @@
 
 body {
-    background-color: lightGreen;
+    /*background-color: lightGreen;*/
     background-image:url("http://www.servinet.net/wp-content/uploads/2016/09/fondo-web-blanco.jpg");
 
 }
 h1 {
-    color: green ;
+    color: black ;
     text-align: center;
 }
 form {
@@ -16,7 +16,7 @@ form {
 .a  {
   background-color: lightgrey;
   width: 300px;
-  border: 5px solid green;
+  border: 5px solid LawnGreen;
   padding: 5px;
   margin: 5px;
     color: black;
