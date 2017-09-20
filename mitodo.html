@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="mytodo">
+<title>MiTodo</title>
+<style>
+body {
+    background-color: lightGreen;
+}
+h1 {
+    color: green ;
+    text-align: center;
+}
+form {
+    font-family: verdana;
+    font-size: 20px;
+    text-align:center;
+}
+.todoo{
+
+}
+.a  {
+
+  background-color: lightgrey;
+  width: 300px;
+  border: 5px solid green;
+  padding: 5px;
+  margin: 5px;
+    color: black;
+    font-family: verdana;
+    font-size: 20px;
+    text-align:center;
+}
+p {
+    font-family: verdana;
+    font-size: 30px;
+    text-align:center;
+}
+
+</style>
+<script src="angular/angular.min.js"></script>
+<script src="controlador.js" ></script>
+<body ng-controller="controladortodo">
+
+
+
+
+<h1>Mi Todo</h1>
+<div class="todoo">
+
+
+<form ng-submit="todoagregar()">
+    <input type="text" ng-model="input"  placeholder="Agregar nueva tarea">
+    <br>
+    <input type="submit" value="agregar tarea">
+</form>
+
+<br>
+
+<div class="a" ng-repeat="x in todolista">
+  <input type="checkbox" ng-model="x.done"> <span ng-bind="x.texto"></span>
+</div>
+
+<p><button ng-click="borrar()">quitar tarea</button></p>
+</div>
+
+
+</body>
+</html>

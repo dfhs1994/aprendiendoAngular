@@ -79,3 +79,23 @@ $scope.conteoClicks++
 }
 }])
 })();
+(function () {
+  angular
+  .module('mytodo', [])
+  .controller('controladortodo', function($scope){
+      $scope.todolista = [{texto:'aqui se agregan tus tareas', done:false}];
+
+      $scope.todoagregar = function() {
+          $scope.todolista.push({texto:$scope.input, done:false});
+          $scope.input = "";
+      };
+
+      $scope.borrar = function() {
+          var oldList = $scope.todolista;
+          $scope.todolista = [];
+          angular.forEach(oldList, function(x) {
+              if (!x.done) $scope.todolista.push(x);
+          });
+      };
+  });
+}());
