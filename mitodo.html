@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html ng-app="mytodo">
-  <title>MiTodo</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/estilos.css" rel="stylesheet" type="text/css">
-  <script src="angular/angular.min.js"></script>
-  <script src="controlador.js" ></script>
+<title>MiTodo</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script src="angular/angular.min.js"></script>
+<script src="controlador.js"></script>
+
 <body ng-controller="controladortodo">
   <h1>Mi Todo</h1>
 
-    <form ng-submit="todoagregar()">
-      <i class="material-icons prefix">book</i>
-    <input style="WIDTH: 300px; HEIGHT: 20px" size=32 type="text" ng-model="input"  placeholder="Agregar nueva tarea" required >
+  <form ng-submit="todoagregar()">
+    <i class="material-icons prefix">book</i>
+    <input style="WIDTH: 300px; HEIGHT: 20px" size=32 type="text" ng-model="input" placeholder="Agregar nueva tarea" required>
     <br>
 
     <input type="submit" value="agregar tarea">
-    </form>
-    <br>
-    <div class="a" ng-repeat="x in todolista">
-        <input type="checkbox" ng-model="x.done"> <span ng-bind="x.texto"></span>
-    </div>
-    <p><button ng-click="borrar()" ><i class="material-icons prefix">clear_all</i>Quitar tarea</button></p>
+  </form>
+  <br>
+  <div class="a" ng-repeat="x in todolista">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.texto{{}}"></span>
+  </div>
+  <p><button ng-click="borrar()"><i class="material-icons prefix">clear_all</i>Quitar tarea</button></p>
 
 </body>
+
 </html>

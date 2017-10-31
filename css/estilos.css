@@ -19,7 +19,7 @@ input[type="checkbox"] {
 
 .done-true {
   text-decoration: line-through;
-  color: #ddd;
+  /*color: #ddd;*/
 }
 .a  {
   background-color: lightgrey;
@@ -31,7 +31,7 @@ input[type="checkbox"] {
     font-family: verdana;
     font-size: 20px;
     text-align:center;
-    
+
 }
 p {
     font-family: verdana;

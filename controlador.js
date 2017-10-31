@@ -83,7 +83,7 @@ $scope.conteoClicks++
   angular
   .module('mytodo', [])
   .controller('controladortodo', function($scope){
-      $scope.todolista = [{texto:'Aqui se agregan tus tareas', done:false}];
+      $scope.todolista = [{texto:"", done:false}];
 
       $scope.todoagregar = function() {
           $scope.todolista.push({texto:$scope.input, done:false});
@@ -96,7 +96,7 @@ $scope.conteoClicks++
           angular.forEach(oldList, function(x) {
               if (!x.done) $scope.todolista.push(x);
           });
-          
+
       };
   });
 }());
